@@ -1,0 +1,29 @@
+<style>
+	body{
+		background-image: url('/assets/game_home.png');
+		background-size: 100% auto;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+	}
+</style>
+
+<div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-4 welcome-box">
+		<h1>Welcome to Alpha City</h1>
+		<p>With rapidly increasing population densities, various resource shortages and climate change, the need for long-term sustainable urban development is now vital to ensuring a community’s prosperity. This project aims to use scenario planning to educate, communicate, and discover better methods of metropolitan improvement.
+			Alphacity is a 3D browser based game, designed to inform users about the impact and function of town planning on a city or precinct. Using real-time, multi-player online technologies, users will make key decisions in their municipality and observe realistic feedback on how this might effect an actual urban environment.</p>
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-4">
+			<div id="login_box"> 
+				<span class="railway">Do you have an account?</span>
+				<%= link_to "Log in", new_user_session_path, :class => 'btn btn-default btn-lg welcome_buttons'%>
+			</div>
+			<div id="signup_box">
+				<span class="railway">No? Then sign up here!</span>
+				<%= link_to "Sign up", new_user_registration_path, :class => 'btn btn-default btn-lg welcome_buttons'%>
+			</div>
+		</div>
+		<div class="col-md-2"></div>
+</div>
